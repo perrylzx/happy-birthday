@@ -1,0 +1,31 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="center-content">
+    <iframe src="happy.mp3" allow="autoplay" id="iframeAudio"></iframe>
+    <h1 class="name">
+      LEMON
+    </h1>
+    <h2>
+      IT IS YOUR BIRTHDAY.
+    </h2>
+    <button class="balloonButton">click on me</button>
+    <img src='ballon.svg' class="balloon" />
+    <img width="100%" height='200px' src='aespa-gg.gif' />
+  </div>
+</body>
+<script>
+  $('.balloonButton').on("click", function () {
+    console.log('hello');
+    $(".balloon").css("top", Math.random() * 10 + "%");
+    $(".balloon").css("left", Math.random() * 10 + "%");
+
+  })
+</script>
+
+</html>
